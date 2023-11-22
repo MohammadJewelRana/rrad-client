@@ -5,6 +5,7 @@ import Meta from '../assets/rrad_logo/MicrosoftTeams-image-7-300x83.png'
 
 import Logo from "../assets/rrad_logo/rradlogo.png";
 import { FaBeer, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div className=" pt-36">
@@ -38,11 +39,11 @@ const Footer = () => {
                     {/* map  */}
                     <div className="pr-10">
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.326081130732!2d90.40788617608627!3d23.771399987968454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77f39b41e49%3A0x2b655fe4b279b2cf!2sRobust%20Research%20And%20Development%20Ltd.%20(RRAD)!5e0!3m2!1sen!2sbd!4v1700027663093!5m2!1sen!2sbd"      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    className="md:h-96 md:w-[500px] "
-                    ></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.326081130732!2d90.40788617608627!3d23.771399987968454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77f39b41e49%3A0x2b655fe4b279b2cf!2sRobust%20Research%20And%20Development%20Ltd.%20(RRAD)!5e0!3m2!1sen!2sbd!4v1700027663093!5m2!1sen!2sbd" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            className="md:h-96 md:w-[500px] "
+                        ></iframe>
 
-                       
+
                     </div>
                 </div>
 
@@ -71,10 +72,11 @@ const Footer = () => {
 
                         <div className="flex gap-4   ">
 
-                            <FaFacebook className="border rounded-full text-4xl p-2   hover:bg-red-600 cursor-pointer "></FaFacebook>
-                            <FaTwitter className="border rounded-full text-4xl p-2   hover:bg-red-600 cursor-pointer "></FaTwitter>
-                            <FaInstagram className="border rounded-full text-4xl p-2   hover:bg-red-600 cursor-pointer "></FaInstagram>
-                            <FaLinkedin className="border rounded-full text-4xl p-2   hover:bg-red-600 cursor-pointer "></FaLinkedin>
+                            <Link to='https://www.facebook.com/rrad.ltd' target="_blank"> <FaFacebook className="border rounded-full text-4xl p-2   hover:bg-red-600 cursor-pointer "></FaFacebook> </Link>
+                            <Link to='https://twitter.com/rrad_bd' target="_blank">  <FaTwitter className="border rounded-full text-4xl p-2   hover:bg-red-600 cursor-pointer "></FaTwitter> </Link>
+                            <Link to='https://www.instagram.com/rrad.ltd/' target="_blank">  <FaInstagram className="border rounded-full text-4xl p-2   hover:bg-red-600 cursor-pointer "></FaInstagram>  </Link>
+                            <Link to='https://www.linkedin.com/company/rrad-bd' target="_blank">   <FaLinkedin className="border rounded-full text-4xl p-2   hover:bg-red-600 cursor-pointer "></FaLinkedin>  </Link>
+
                         </div>
                     </nav>
                 </footer>

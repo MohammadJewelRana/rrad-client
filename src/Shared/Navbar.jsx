@@ -4,24 +4,21 @@ import Logo from '../assets/rrad_logo/rradlogo.png'
 
 
 const Navbar = () => {
+    const navLinks = <div className='flex gap-4 pr-4'>
+        <NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600    border-b-2   mr-4 border-b-red-700 " : " " } > Home </NavLink>
 
-    const navLinks = <div className=''>
-        <NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600    border-b-4   mr-4 border-b-blue-700 " : " " } > Home </NavLink>
+        <NavLink to="/about" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600    border-b-2   mr-4 border-b-red-700 " : ""} > About </NavLink>
 
-        <NavLink to="/about" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600  border-b-2 border-b-blue-700   " : ""} > About </NavLink>
+        <NavLink to="/portfolio" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600    border-b-2   mr-4 border-b-red-700  " : ""} > Work </NavLink>
+
+        {/* <NavLink to="" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600    border-b-2   mr-4 border-b-red-700  " : ""} > Career </NavLink> */}
+
+        <NavLink to="/services" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600    border-b-2   mr-4 border-b-red-700   " : ""} > Services </NavLink>
+
+        <NavLink to="/contact" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600    border-b-2   mr-4 border-b-red-700  " : ""} > Contact </NavLink>
 
         
 
- 
-
-        <Link to='/'>Home</Link>
-        <Link to='/about'> About</Link>
-        <Link to='/work'>Works </Link>
-        <Link to='/career'> Career</Link>
-        <Link to='/services'> Services</Link>
-        <Link to='/blog'>Blog </Link>
-        <Link to='/contact'>Contact </Link>
-        <Link to='/sitemap'>Sitemap </Link>
 
     </div>
 
