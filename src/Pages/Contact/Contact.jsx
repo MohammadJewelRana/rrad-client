@@ -16,13 +16,13 @@ const Contact = () => {
 
     return (
         <div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16 ">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16 text-black ">
 
 
                 <div className="card   bg-white shadow-xl cursor-pointer hover:text-red-600">
 
                     <div className="flex">
-                        <div className="mx-auto mb-12 mt-4 ">
+                        <div className="mx-auto  my-8 ">
                             <FaAddressBook className="text-center text-4xl text-red-600 cursor-pointer"></FaAddressBook>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const Contact = () => {
                 <div className="card   bg-white shadow-xl cursor-pointer hover:text-red-600">
 
                     <div className="flex">
-                        <div className="mx-auto mb-12 mt-4 ">
+                        <div className="mx-auto  my-8 ">
                             <FaMailBulk className="text-center text-4xl text-red-600 cursor-pointer"></FaMailBulk>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const Contact = () => {
                 <div className="card   bg-white shadow-xl cursor-pointer hover:text-red-600">
 
                     <div className="flex">
-                        <div className="mx-auto mb-12 mt-4 ">
+                        <div className="mx-auto   my-8 ">
                             <FaPhone className="text-center text-4xl text-red-600 cursor-pointer"></FaPhone>
                         </div>
                     </div>
