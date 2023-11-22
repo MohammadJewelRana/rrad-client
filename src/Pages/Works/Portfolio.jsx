@@ -6,10 +6,14 @@ import img3 from '../../assets/projects/3.png'
 import img4 from '../../assets/projects/4.png'
 import img5 from '../../assets/projects/5.png'
 import img6 from '../../assets/projects/6.png'
+import { Helmet } from 'react-helmet-async';
 
 const Portfolio = () => {
     return (
         <div >
+                       <Helmet>
+                <title>Work | RRAD </title>
+            </Helmet>
             <h1 className='text-white font-bold text-2xl   mt-12  '>SOME SUCCESSFUL PROJECTS</h1>
             <div className='mb-12 border border-red-600 w-16 mx-auto mt-3'></div>
 

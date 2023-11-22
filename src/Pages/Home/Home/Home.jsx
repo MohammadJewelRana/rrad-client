@@ -8,11 +8,18 @@ import Clients from './Clients';
 import Our_Project from './Our_Project';
 import Advisor from './Advisor';
 import Caresoul from './Caresoul';
+import { Helmet } from 'react-helmet-async';
 
 
 const Home = () => {
+    
     return (
         <div className=''>
+            
+            <Helmet>
+                <title>Home | RRAD </title>
+            </Helmet>
+
             <Caresoul></Caresoul>
             <About_rrad></About_rrad>
 

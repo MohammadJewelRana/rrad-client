@@ -1,6 +1,7 @@
 import React from "react";
 import { FaAddressBook, FaLocationArrow, FaMailBulk, FaPhone, FaSearchLocation, FaVoicemail } from "react-icons/fa";
 import { useForm } from "react-hook-form";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -16,6 +17,9 @@ const Contact = () => {
 
     return (
         <div>
+                       <Helmet>
+                <title>Contact | RRAD </title>
+            </Helmet>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16 text-black ">
 
 
