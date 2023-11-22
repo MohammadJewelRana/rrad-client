@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const About_rrad = () => {
     return (
-        <div className='text-left my-28'>
+        <div className='text-left mb-28 mt-8'>
 
             <h1 className='text-white mb-4'>WE ARE</h1>
             <h1 className='text-white text-4xl font-bold '> ROBUST RESEARCH AND DEVELOPMENT LTD. </h1>

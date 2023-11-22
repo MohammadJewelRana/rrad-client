@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className=" pt-36">
             {/* <div className='mt-[calc(90vh-200px)]'> */}
-            <footer className="footer p-10  bg-black text-base-content      ">
+            <footer className="footer    bg-black text-base-content      ">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     {/* text  */}
@@ -36,8 +36,13 @@ const Footer = () => {
                     </div>
 
                     {/* map  */}
-                    <div>
-                        <img src={Logo} className="h-12 w-56" alt="" />
+                    <div className="pr-10">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.326081130732!2d90.40788617608627!3d23.771399987968454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77f39b41e49%3A0x2b655fe4b279b2cf!2sRobust%20Research%20And%20Development%20Ltd.%20(RRAD)!5e0!3m2!1sen!2sbd!4v1700027663093!5m2!1sen!2sbd"      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    className="md:h-96 md:w-[500px] "
+                    ></iframe>
+
+                       
                     </div>
                 </div>
 
@@ -48,7 +53,7 @@ const Footer = () => {
             </footer>
 
 
-            <div className=" bg-black p-8">
+            <div className=" bg-black p-4 md:p-0 mt-12">
                 <hr />
                 <h1 className="font-bold text-[16px] md:text-xl text-white text-left mt-8 "> WE ARE PROUD MEMBER OF</h1>
 
